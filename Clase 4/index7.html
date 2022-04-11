@@ -120,11 +120,14 @@
         alert('Al menos un elemento en Genero debe ser seleccionado!');
         return false;
       }
-
-      if(selectDeporte[selectDeporte.selectedIndex].value === ''){
-        alert('Seleccione un deporte por favor.')
-        return false;
+      if(selectDeporte.selectedIndex==0)
+      {   alert('Seleccione un deporte por favor.')
+          return false;
       }
+      // if(selectDeporte[selectDeporte.selectedIndex].value === ''){
+      //   alert('Seleccione un deporte por favor.')
+      //   return false;
+      // }
 
       if(isNaN(txtEdad.value)){
         alert('Ingrese un número por favor.')
